@@ -19,7 +19,7 @@ char	*ft_strchr(const char *src, int c)
 
 	str = (unsigned char *)src;
 	character = (unsigned char)c;
-	while (*str != character)
+	while (str && *str != character)
 	{
 		if (*str == '\0')
 			return (NULL);

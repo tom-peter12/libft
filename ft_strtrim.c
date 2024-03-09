@@ -22,12 +22,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	left = 0;
 	right = ft_strlen(s1) - 1;
 	while (s1[left] && ft_strchr(set, s1[left]))
-	{
 		left++;
-	}
 	while (s1[right] && ft_strrchr(set, s1[right]) && (right > left))
-	{
 		right--;
-	}
 	return (ft_substr(s1, left, right - left + 1));
 }

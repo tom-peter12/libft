@@ -21,7 +21,7 @@ char	*ft_strdup(const char *src)
 	duplicated = (char *)malloc((ft_strlen(src) * sizeof(char)) + 1);
 	if (!duplicated)
 		return (NULL);
-	while (src[i] != '\0')
+	while (src && src[i] != '\0')
 	{
 		duplicated[i] = src[i];
 		i++;

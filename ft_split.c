@@ -19,7 +19,7 @@ static int	count_strings(const char *str, char c)
 
 	count = 0;
 	i = 0;
-	while (str[i] != '\0')
+	while (str && str[i] != '\0')
 	{
 		while (str[i] != '\0' && str[i] == c)
 			i++;
